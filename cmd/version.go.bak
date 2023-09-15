@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-//	"github.com/alist-org/alist/v3/internal/conf"
+	"github.com/alist-org/alist/v3/internal/conf"
 	"github.com/spf13/cobra"
 )
 
@@ -23,7 +23,7 @@ Commit ID: %s
 Version: %s
 WebVersion: %s
 `,
-			"2023-09-15 18:52:37 +0000", "go1.21.0 android/arm64", "ChaseKing <2245411836@qq.com>", "9de34f1", "3.27.0", "3.26.0")
+			conf.BuiltAt, conf.GoVersion, conf.GitAuthor, conf.GitCommit, conf.Version, conf.WebVersion)
 		os.Exit(0)
 	},
 }
